@@ -18,7 +18,7 @@ if ( $ed_jobposting && jobscout_is_wp_job_manager_activated() && $job_title  ) {
                 <article class="page type-page status-publish hentry">
                     <?php 
                         if( $job_title ) echo '<header class="entry-header">
-                            <h2 class="entry-title" style="text-align: center;">'. esc_html( $job_title ) .'</h2>
+                            <h2 class="entry-title" style="text-align: center;letter-spacing: 2px;">TOP JOBS</h2>
                         </header>'; 
                         if( jobscout_is_wp_job_manager_activated() && $count_posts->publish != 0 ){ ?>
                             <div class="entry-content" itemprop="text">

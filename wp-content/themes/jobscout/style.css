@@ -681,6 +681,9 @@ div.job_listings {
       grid-template-columns: repeat(1, 1fr);  
       grid-gap: 15px 0px !important;
   }
+  .article-wrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .job_listings .job_listings {
@@ -1679,7 +1682,9 @@ form.search-form input.search-submit:focus {
 }
 
 .page-template-default figure.post-thumbnail {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
+  padding: 30px 15px 30px 30px;
+  flex:1;
 }
 
 .page-template-default figure.post-thumbnail a.post-thumbnail {
@@ -3209,7 +3214,7 @@ section.article-section {
 
 .article-section .article-wrap {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
   text-align: left;
   margin-top: 50px;
@@ -3223,11 +3228,16 @@ section.article-section {
 }
 
 .article-section .article-wrap article img {
+  /* width: 100%; */
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .article-section .article-wrap header.entry-header {
-  padding: 30px;
+  /* padding: 30px; */
+  padding: 30px 30px 30px 15px;
+  flex: 1;
 }
 
 .article-section .article-wrap header.entry-header .entry-title {
