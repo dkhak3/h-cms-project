@@ -99,18 +99,23 @@ if( ! function_exists( 'jobscout_header' ) ) :
 function jobscout_header(){ 
     ?>
     <header id="masthead" class="site-header header-one" itemscope itemtype="https://schema.org/WPHeader">
-        <?php if( has_nav_menu( 'secondary' ) || current_user_can( 'manage_options' ) ) jobscout_secondary_navigation(); ?>
-        <div class="header-main">
-            <div class="container">
-                <?php 
-                    jobscout_site_branding( false );
-                    echo '<div class="menu-wrap">';
-                    jobscout_primary_nagivation();
-                    echo '</div><!-- .menu-wrap -->';
-                ?>
-            </div>
-        </div> <!-- .header-main -->
-    </header> <!-- .site-header -->
+                <div class="header">
+                    <div class="header-l">
+                        <img src="wp-content/themes/jobscout/images/plan-do-see.jpg" alt="" id="">
+                        <p>RECRUITING</p>
+                    </div>
+                    <div class="header-r">
+                        <ul>
+                            <li><a href="index.php">HOME</a></li>
+                            <li><a href="index.php/jobs">JOBS</a></li>
+                            <li><a href="index.php/blog">NEWS</a></li>
+                            <li><a href="index.php/about">ABOUT</a></li>
+                            <li><a href="index.php/contact">CONTACT</a></li>
+                        </ul>
+                        <a class="button" href="#">SUBMIT JOBS</a>
+                    </div>
+                </div> <!-- .header-main -->
+            </header> <!-- .site-header -->
     <?php
 }
 endif;
