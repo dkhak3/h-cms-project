@@ -554,19 +554,12 @@ if( ! function_exists( 'jobscout_footer_bottom' ) ) :
 */
 function jobscout_footer_bottom(){ ?>
     <div class="footer-b">
-		<div class="container">
-            <?php 
-                if ( function_exists( 'the_privacy_policy_link' )  )  the_privacy_policy_link( '<div class="privacy-block">', '</div>' );
-            ?>
-			<div class="copyright">            
-            <?php
-                jobscout_get_footer_copyright();
-                jobscout_ed_author_link();
-                jobscout_ed_wp_link();
-            ?>               
+            <div class="container">
+                <div class="copyright">
+                    © 2022 PLAN DO SEE INC
+                </div>
             </div>
-		</div>
-	</div>
+        </div>
     <?php
 }
 endif;
