@@ -524,17 +524,24 @@ function jobscout_footer_top(){
     }
                  
     if( $active_sidebars ){ ?>
-        <div class="footer-t">
-    		<div class="container">
-    			<div class="grid column-<?php echo esc_attr( $sidebar_count ); ?>">
-                <?php foreach( $active_sidebars as $active ){ ?>
-    				<div class="col">
-    				   <?php dynamic_sidebar( $active ); ?>	
-    				</div>
-                <?php } ?>
+        <div class="footer-top">
+                <div class="title-footer">
+                    <img src="wp-content/themes/jobscout/images/plan-do-see.jpg" alt="" id="">
                 </div>
-    		</div>
-    	</div>
+                <ul class="list-feature">
+                    <li><a href="index.php/jobs">JOBS</a></li>
+                    <li><a href="index.php/jobs">COMPANIES</a></li>
+                    <li><a href="index.php/blog">BLOG</a></li>
+                    <li><a href="index.php/about">ABOUT</a></li>
+                    <li><a href="index.php/contact">CONTACT</a></li>
+                </ul>
+                <ul class="list-icon-society">
+                    <li><img src="wp-content/themes/jobscout/images/icon-face-3.jpg" alt="" id="icon-face"></li>
+                    <li><img src="wp-content/themes/jobscout/images/icon-google.png" alt="" id="icon-face"></li>
+                    <li><img src="wp-content/themes/jobscout/images/icon-line.png" alt="" id="icon-face"></li>
+                    <li><img src="wp-content/themes/jobscout/images/icon-twiter.png" alt="" id="icon-face"></li>
+                </ul>
+            </div>
         <?php 
     }
 }
