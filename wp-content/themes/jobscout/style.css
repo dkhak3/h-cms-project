@@ -8187,7 +8187,11 @@ RESPONSIVE STYLESHEET
 .list-feature li, .list-icon-society li{
   margin: 0 13px;
   font-weight: 800;
-  transition: 0.2s;
+  transition: 0.2s
+}
+
+.list-feature li a, .list-icon-society li a{
+  color: #000;
 }
 
 #icon-face{
@@ -8199,7 +8203,6 @@ RESPONSIVE STYLESHEET
 
 .footer-b{
   background-color: #230D03;
-  color: #000;
 }
 
 .list-feature li:hover, .list-icon-society li:hover{
