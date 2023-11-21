@@ -36,7 +36,7 @@ if( $ed_blog && ( $blog_heading || $sub_title || $qry->have_posts() ) ){ ?>
     			<?php 
                 while( $qry->have_posts() ){
                     $qry->the_post(); ?>
-                    <article class="post" style="display: flex; background: #fff;">
+                    <article class="post" style="display: flex; background: #fff;box-shadow: none;border-radius: unset;">
         				<figure class="post-thumbnail">
                             <a href="<?php the_permalink(); ?>" class="post-thumbnail">
                             <?php 
